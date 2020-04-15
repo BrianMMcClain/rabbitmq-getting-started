@@ -1,0 +1,14 @@
+{
+  "name": "rabbit-getting-started-node",
+  "version": "1.0.0",
+  "description": "Getting Started with RabbitMQ Node.js Exmaple",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian McClain",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5"
+  }
+}
