@@ -8,11 +8,11 @@ services:
       - '5672:5672'
       - '25672:25672'
       - '15672:15672'
-    volumes:
-      - 'rabbitmq_data:/bitnami'
+    # volumes:
+    #   - 'rabbitmq_data:/bitnami'
     environment:
-      - RABBITMQ_USERNAME=guest
-      - RABBITMQ_PASSWORD=guest
-volumes:
-  rabbitmq_data:
-    driver: local
+      - RABBITMQ_USERNAME=user
+      - RABBITMQ_PASSWORD=bitnami
+# volumes:
+#   rabbitmq_data:
+#     driver: local
