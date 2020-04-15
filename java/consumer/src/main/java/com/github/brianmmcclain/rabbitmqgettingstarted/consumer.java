@@ -15,7 +15,7 @@ public class consumer {
 		ConnectionFactory factory = new ConnectionFactory();
 		factory.setHost("localhost");
 		factory.setUsername("user");
-		factory.setPassword("bitnami");
+		factory.setPassword("password");
 
 		try {
 			Connection connection = factory.newConnection();

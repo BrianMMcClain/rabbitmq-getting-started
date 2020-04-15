@@ -12,7 +12,7 @@ services:
     #   - 'rabbitmq_data:/bitnami'
     environment:
       - RABBITMQ_USERNAME=user
-      - RABBITMQ_PASSWORD=bitnami
+      - RABBITMQ_PASSWORD=password
 # volumes:
 #   rabbitmq_data:
 #     driver: local
