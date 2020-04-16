@@ -14,8 +14,7 @@ public class emitter {
 		// Connect to the RabbitMQ server
 		ConnectionFactory factory = new ConnectionFactory();
 		factory.setHost("localhost");
-		factory.setUsername("user");
-		factory.setPassword("password");
+
 		try (Connection connection = factory.newConnection();
 			
 			// Create a channel and connect it to the queue

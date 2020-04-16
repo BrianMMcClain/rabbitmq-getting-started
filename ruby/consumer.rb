@@ -1,7 +1,7 @@
 require 'bunny'
 
 # Set up the connection to the RabbitMQ server
-connection = Bunny.new(:username => "user", :password => "password")
+connection = Bunny.new()
 connection.start
 
 # Set up the channel and queue in RabbitMQ

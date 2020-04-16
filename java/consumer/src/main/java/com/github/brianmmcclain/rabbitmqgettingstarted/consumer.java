@@ -14,9 +14,7 @@ public class consumer {
 		// Connect to the RabbitMQ server
 		ConnectionFactory factory = new ConnectionFactory();
 		factory.setHost("localhost");
-		factory.setUsername("user");
-		factory.setPassword("password");
-
+		
 		try {
 			Connection connection = factory.newConnection();
 

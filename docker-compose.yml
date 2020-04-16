@@ -2,7 +2,7 @@ version: '2'
 
 services:
   rabbitmq:
-    image: 'bitnami/rabbitmq:3.8.3'
+    image: 'rabbitmq:3-management'
     ports:
       - '4369:4369'
       - '5672:5672'
@@ -10,9 +10,6 @@ services:
       - '15672:15672'
     # volumes:
     #   - 'rabbitmq_data:/bitnami'
-    environment:
-      - RABBITMQ_USERNAME=user
-      - RABBITMQ_PASSWORD=password
 # volumes:
 #   rabbitmq_data:
 #     driver: local
