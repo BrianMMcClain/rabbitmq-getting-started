@@ -28,6 +28,9 @@ public class consumer {
 				String message = new String(delivery.getBody(), "UTF-8");
 				System.out.println(" > " + message);
 			};
+
+			// Begin consuming messages from the queue. The second argument will tell
+			// RabbitMQ to automatically consider the message acknowledged once received.
 			channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
